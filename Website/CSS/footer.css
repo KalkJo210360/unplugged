@@ -1,0 +1,123 @@
+.footer {
+  background: var(--var-sds-color-background-default-default, #ffffff);
+
+  border-style: solid;
+  border-color: var(--var-sds-color-border-default-default, #d9d9d9);
+  border-width: 1px 0px 0px 0px;
+
+  padding: var(--var-sds-size-space-800, 32px)
+    var(--var-sds-size-space-800, 32px) var(--var-sds-size-space-800, 32px)
+    var(--var-sds-size-space-800, 32px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+
+  gap: var(--var-sds-size-space-400, 16px);
+  row-gap: 16px;
+
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.button-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-400, 16px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  flex: 2;
+}
+.logo-litec {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    overflow: visible;
+}
+.logo-instagram {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.logo-youtube {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.logo-tiktok {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    overflow: visible;
+}
+.footer-links-container {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+
+    gap: 8vw;
+}
+.text-strong {
+  color: var(--var-sds-color-text-default-default, #1e1e1e);
+  text-align: left;
+  font-family: var(--body-strong-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--body-strong-font-size, 16px);
+  line-height: var(--body-strong-line-height, 140%);
+  font-weight: var(--body-strong-font-weight, 600);
+  position: relative;
+}
+.unplugged-container {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.unplugged-logo-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.unplugged-logo {
+  position: relative;
+  object-fit: cover;
+}
+.unplugged-text {
+  color: #000000;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 700;
+  position: relative;
+}
+.unplugged-copyright {
+  color: #000000;
+  text-align: right;
+  font-family: var(--body-small-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-small-font-size, 14px);
+  line-height: var(--body-small-line-height, 140%);
+  font-weight: var(--body-small-font-weight, 400);
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-links-container {
+        gap: 20px;
+    }
+    .unplugged-logo-text-container {
+        justify-content: center;
+    }
+}
