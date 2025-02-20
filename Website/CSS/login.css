@@ -1,3 +1,10 @@
+#login-window {
+  position: absolute;
+  top: 105px;
+  right: 0%;
+  display: none;
+}
+
 .form-log-in,
 .form-log-in * {
   box-sizing: border-box;

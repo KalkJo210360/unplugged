@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <!-- <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="stylesheet" href="../CSS/reset_pwd.css"> -->
+    <script src="../JS/header.js"></script>
     
     <style>
     a,
@@ -50,17 +55,75 @@
             </div>
 
             <div class="button-container">
-                <button class="button login-button">
+                <button type="button" class="button login-button" onclick="openLogin()">
                     <div class="button-text login">Einloggen</div>
                 </button>
-                <button class="button register-button">
+                <button type="button" class="button register-button" onclick="openRegister()">
                     <div class="button-text register">Registrieren</div>
                 </button>
             </div>
 
+            <div id="login-window">
+                <div class="form">
+                    <div class="input-field">
+                      <div class="label">E-Mail</div>
+                      <input type="email" placeholder="max.muster@gmail.com" class="input" />
+                    </div>
+                    <div class="input-field">
+                      <div class="label">Passwort</div>
+                      <input type="password" placeholder="Wert" class="input" />
+                    </div>
+                    <div class="button-group">
+                      <div class="frm-button">
+                        <div class="frm-button-text">Einloggen</div>
+                      </div>
+                    </div>
+                    <div class="text-link">
+                      <button type="frm-button" class="text-link2" onclick="forgotPW()">Passwort vergessen?</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="forgot-password">
+                <div class="form forgot-password-frm">
+                    <div class="input-field">
+                        <div class="label">E-Mail</div>
+                        <input type="email" placeholder="max.muster@gmail.com" class="input" />
+                    </div>
+                    <div class="button-group">
+                        <button type="frm-button" class="button" onclick="returnForgotPW()">
+                            <div class="frm-button-text">Zurück</div>
+                        </button>
+                        <div class="frm-button">
+                            <div class="frm-button-text">Passwort zurücksetzen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="register-window">
+                <div class="form register-frm">
+                    <div class="input-field">
+                        <div class="label">E-Mail</div>
+                        <input type="email" placeholder="max.muster@gmail.com" class="input">
+                    </div>
+                    <div class="input-field">
+                        <div class="label">Passwort</div>
+                        <input type="password" placeholder="Wert" class="input">
+                    </div>
+                    <div class="checkbox-field">
+                        <div class="button-group">
+                            <div class="frm-button">
+                                <div class="frm-button-text">Registrieren</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <a href="./index.html" class="logo-text-container">
                 <div class="logo-container">
-                    <img class="logo-nav" src="../img/logo-11.png" />
+                    <img class="logo-nav" src="../img/unplugged_coloured.png" />
                 </div>
                 <div class="unplugged">unplugged</div>
             </a>
