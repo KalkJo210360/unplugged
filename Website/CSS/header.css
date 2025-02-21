@@ -127,6 +127,7 @@ menu, ol, ul {
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .login-button {
@@ -304,6 +305,7 @@ menu, ol, ul {
   flex: 1;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .frm-button-text {
@@ -340,4 +342,5 @@ menu, ol, ul {
   font-weight: var(--body-link-font-weight, 400);
   text-decoration: underline;
   position: relative;
+  cursor: pointer;
 }
