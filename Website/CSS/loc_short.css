@@ -1,5 +1,12 @@
+main {
+  margin-top: 7%;
+  padding: 3px;
+  width: 100%;
+  position: relative;
+  min-height: fit-content;
+}
 body {
-  background-image: url(/img/loc_short/leaf_bg.png);
+  background-image: url(../img/loc_short/leaf_bg.png);
   background-color: black;
   font-family: Arial, sans-serif;
   margin: 0;
