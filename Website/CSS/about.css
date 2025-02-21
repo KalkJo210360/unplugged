@@ -1,5 +1,12 @@
+main {
+  margin-top: 5%;
+  padding: 3px;
+  width: 100%;
+  position: relative;
+  min-height: fit-content;
+}
 body {
-  background-image: url(/img/about/wood.png);
+  background-image: url(../img/about/wood.png);
   background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;

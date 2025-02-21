@@ -6,7 +6,7 @@ main {
   min-height: fit-content;
 }
 body {
-  background-image: url(/img/loc_short/leaf_bg.png);
+  background-image: url(../img/loc_short/leaf_bg.png);
   background-color: black;
   font-family: Arial, sans-serif;
   margin: 0;

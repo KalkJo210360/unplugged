@@ -4,14 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über uns - Unplugged</title>
-    <link rel="stylesheet" href="/CSS/about.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/about.css">
+    <script src="../JS/header.js"></script>
 </head>
 <body>
+    <header class="nav-bar">
+        <div class="navigation-pill-list">
+            <div class="navigation-pill">
+                <a href="./loc_short.html" class="title">Orte</a>
+            </div>
+            <div class="navigation-pill">
+                <a href="./about.html" class="title">Über uns</a>
+            </div>
+            <div class="navigation-pill">
+                <a href="./contact.html" class="title">Kontakt</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button type="button" class="button login-button" onclick="openLogin()">
+                <div class="button-text login">Einloggen</div>
+            </button>
+            <button type="button" class="button register-button" onclick="openRegister()">
+                <div class="button-text register">Registrieren</div>
+            </button>
+        </div>
+
+        <div id="login-window">
+            <div class="form">
+                <div class="input-field">
+                  <div class="label">E-Mail</div>
+                  <input type="email" placeholder="max.muster@gmail.com" class="input" />
+                </div>
+                <div class="input-field">
+                  <div class="label">Passwort</div>
+                  <input type="password" placeholder="Wert" class="input" />
+                </div>
+                <div class="frm-button-group">
+                  <div class="frm-button">
+                    <div class="frm-button-text">Einloggen</div>
+                  </div>
+                </div>
+                <div class="text-link">
+                  <button type="frm-button" class="text-link2" onclick="forgotPW()">Passwort vergessen?</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="forgot-password">
+            <div class="form forgot-password-frm">
+                <div class="input-field">
+                    <div class="label">E-Mail</div>
+                    <input type="email" placeholder="max.muster@gmail.com" class="input" />
+                </div>
+                <div class="frm-button-group-forgot-pw">
+                    <button type="button" class="frm-button" onclick="returnForgotPW()">
+                        <div class="frm-button-text">Zurück</div>
+                    </button>
+                    <div class="frm-button">
+                        <div class="frm-button-text">Passwort zurücksetzen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="register-window">
+            <div class="form register-frm">
+                <div class="input-field">
+                    <div class="label">E-Mail</div>
+                    <input type="email" placeholder="max.muster@gmail.com" class="input">
+                </div>
+                <div class="input-field">
+                    <div class="label">Passwort</div>
+                    <input type="password" placeholder="Wert" class="input">
+                </div>
+                <div class="frm-button-group">
+                    <div class="frm-button">
+                        <div class="frm-button-text">Registrieren</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="./index.html" class="logo-text-container">
+            <div class="logo-container">
+                <img class="logo-nav" src="../img/unplugged_coloured.png" />
+            </div>
+            <div class="unplugged">unplugged</div>
+        </a>
+    </header>
+
     <main>
         <h1>Über uns</h1>
         <section class="profiles">
             <div class="profile img1">
-                <img src="/img/about/Florian.png" alt="Florian Kaltenbrunner">
+                <img src="../img/about/Florian.png" alt="Florian Kaltenbrunner">
                 <div>
                     <h2>Florian Kaltenbrunner</h2>
                     <p>Ich besuche das Linzer Technikum (4AHIT). Des Weiteren bin ich Mitgründer und einer der beiden Entwickler der Website von “unplugged”. Später möchte ich meine Ausbildung im Rahmen eines Studiums fortsetzen.</p>
@@ -19,7 +109,7 @@
                 </div>
             </div>
             <div class="profile img2">
-                <img src="/img/about/Joel.png" alt="Joel Kalkusch">
+                <img src="../img/about/Joel.png" alt="Joel Kalkusch">
                 <div>
                     <h2>Joel Kalkusch</h2>
                     <p>Hey, ich bin Joel Kalkusch und bin Schüler des Linzer Technikums. Ich agiere als Entwickler und bin einer der Gründer von “unplugged”. Ich gehe in die 4. Klasse Informationstechnologie und bin 19 Jahre alt.</p>
@@ -27,14 +117,14 @@
                 </div>
             </div>
             <div class="profile img1">
-                <img src="/img/about/Miriam.png" alt="Miriam Aistleitner">
+                <img src="../img/about/Miriam.png" alt="Miriam Aistleitner">
                 <div>
                     <h2>Miriam Aistleitner</h2>
                     <p>Ich bin Miriam Aistleitner, 18 Jahre alt und gehe in die Paul Hahn. Ich habe schon sehr früh Erfahrung mit Psychischen Problemen und Einsamkeit gemacht und somit ist mir dieses Projekt ein persönliches Anliegen, denn sehr viele dieser Probleme können durch ein paar gute Freunde gelöst werden.</p>
                 </div>
             </div>
             <div class="profile img2">
-                <img src="/img/about/" alt="Mario Steinbauer">
+                <img src="../img/about/" alt="Mario Steinbauer">
                 <div>
                     <h2>Mario Steinbauer</h2>
                     <p>Mein Name ist Mario Steinbauer. Ich befasse mich in meiner Freizeit sehr gern mit Psychologie. Mir ist das Projekt ein Anliegen, weil ich, sowie viele andere Jugendliche in Österreich, das Gefühl von Isolation und digitaler Überstimulation nur zu gut kenne. Ein gesundes soziales Umfeld ist essenziell für ein gutes Wohlbefinden.</p>
@@ -42,5 +132,31 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="button-list">
+            <a href="https://www.litec.ac.at/"><img class="logo-litec" src="../img/litec.png" /></a>
+            <a href="https://www.instagram.com/litec.htl/"><img class="logo-instagram" src="../img/instagram.svg" /></a>
+            <a href="https://www.youtube.com/@litechtlpaul-hahn582"><img class="logo-youtube" src="../img/youtube.svg" /></a>
+            <a href="https://www.tiktok.com/@litec.htl?_t=ZN-8tS1FR6wXfq&_r=1"><img class="logo-tiktok" src="../img/tiktok.png" /></a>
+        </div>
+
+        <div class="footer-links-container">
+            <div class="text-strong">Impressum</div>
+            <div class="text-strong">AGB</div>
+        </div>
+
+        <div class="unplugged-container">
+            <div class="unplugged-logo-text-container">
+                <img class="unplugged-logo" src="../img/unplugged_black.png" />
+                <div class="unplugged-text">unplugged</div>
+            </div>
+            <div class="unplugged-copyright">
+                Copyright
+                <img src="../img/copyright.png" />
+                2025 unplugged
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
