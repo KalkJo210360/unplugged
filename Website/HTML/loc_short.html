@@ -4,38 +4,156 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unplugged</title>
-  <link rel="stylesheet" href="/CSS/loc_short.css">
-  <script type="text/javascript" src="/JS/loc_short.js"></script>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" href="../CSS/loc_short.css">
+  <script src="../JS/header.js"></script>
+  <script type="text/javascript" src="../JS/loc_short.js"></script>
 </head>
 <body>
-  <div class="cards">
-    <div class="card">
-      <img src="/img/loc_short/loc1.png" alt="Ort 1">
-      <div class="text">
-        <h3>Ort1</h3>
-        <p>Genießen Sie Ihre freie Zeit an einem Lagerfeuer und der frischen Luft. Weg vom Stress und rein in die Natur, pur.</p>
-        <button class="button" onclick="">Besuchen</button>
-      </div>
+  <header class="nav-bar">
+    <div class="navigation-pill-list">
+        <div class="navigation-pill">
+            <a href="./loc_short.html" class="title">Orte</a>
+        </div>
+        <div class="navigation-pill">
+            <a href="./about.html" class="title">Über uns</a>
+        </div>
+        <div class="navigation-pill">
+            <a href="./contact.html" class="title">Kontakt</a>
+        </div>
     </div>
 
-    <div class="card">
-      <img src="/img/loc_short/loc2.png" alt="Ort 2">
-      <div class="text">
-        <h3>Ort2</h3>
-        <p>Fühlen Sie die exotischen Züge Österreichs mit der umfangreichen Fauna und Flora.</p>
-        <button class="button" onclick="">Besuchen</button>
-      </div>
+    <div class="button-container">
+        <button type="button" class="button login-button" onclick="openLogin()">
+            <div class="button-text login">Einloggen</div>
+        </button>
+        <button type="button" class="button register-button" onclick="openRegister()">
+            <div class="button-text register">Registrieren</div>
+        </button>
     </div>
 
-    <div class="card">
-      <img src="/img/loc_short/loc3.png" alt="Ort 3">
-      <div class="text">
-        <h3>Ort3</h3>
-        <p>Spüren Sie die erfrischende Brise des Tages und lassen Sie sich von der wirklichen Natur verzaubern.</p>
-        <button class="button" onclick="">Besuchen</button>
+    <div id="login-window">
+        <div class="form">
+            <div class="input-field">
+              <div class="label">E-Mail</div>
+              <input type="email" placeholder="max.muster@gmail.com" class="input" />
+            </div>
+            <div class="input-field">
+              <div class="label">Passwort</div>
+              <input type="password" placeholder="Wert" class="input" />
+            </div>
+            <div class="frm-button-group">
+              <div class="frm-button">
+                <div class="frm-button-text">Einloggen</div>
+              </div>
+            </div>
+            <div class="text-link">
+              <button type="frm-button" class="text-link2" onclick="forgotPW()">Passwort vergessen?</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgot-password">
+        <div class="form forgot-password-frm">
+            <div class="input-field">
+                <div class="label">E-Mail</div>
+                <input type="email" placeholder="max.muster@gmail.com" class="input" />
+            </div>
+            <div class="frm-button-group-forgot-pw">
+                <button type="button" class="frm-button" onclick="returnForgotPW()">
+                    <div class="frm-button-text">Zurück</div>
+                </button>
+                <div class="frm-button">
+                    <div class="frm-button-text">Passwort zurücksetzen</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="register-window">
+        <div class="form register-frm">
+            <div class="input-field">
+                <div class="label">E-Mail</div>
+                <input type="email" placeholder="max.muster@gmail.com" class="input">
+            </div>
+            <div class="input-field">
+                <div class="label">Passwort</div>
+                <input type="password" placeholder="Wert" class="input">
+            </div>
+            <div class="frm-button-group">
+                <div class="frm-button">
+                    <div class="frm-button-text">Registrieren</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="./index.html" class="logo-text-container">
+        <div class="logo-container">
+            <img class="logo-nav" src="../img/unplugged_coloured.png" />
+        </div>
+        <div class="unplugged">unplugged</div>
+    </a>
+  </header>
+
+  <main>
+    <div class="cards">
+      <div class="card">
+        <img src="/img/loc_short/loc1.png" alt="Ort 1">
+        <div class="text">
+          <h3>Ort1</h3>
+          <p>Genießen Sie Ihre freie Zeit an einem Lagerfeuer und der frischen Luft. Weg vom Stress und rein in die Natur, pur.</p>
+          <button class="button" onclick="">Besuchen</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/img/loc_short/loc2.png" alt="Ort 2">
+        <div class="text">
+          <h3>Ort2</h3>
+          <p>Fühlen Sie die exotischen Züge Österreichs mit der umfangreichen Fauna und Flora.</p>
+          <button class="button" onclick="">Besuchen</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/img/loc_short/loc3.png" alt="Ort 3">
+        <div class="text">
+          <h3>Ort3</h3>
+          <p>Spüren Sie die erfrischende Brise des Tages und lassen Sie sich von der wirklichen Natur verzaubern.</p>
+          <button class="button" onclick="">Besuchen</button>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    <div class="button-list">
+        <a href="https://www.litec.ac.at/"><img class="logo-litec" src="../img/litec.png" /></a>
+        <a href="https://www.instagram.com/litec.htl/"><img class="logo-instagram" src="../img/instagram.svg" /></a>
+        <a href="https://www.youtube.com/@litechtlpaul-hahn582"><img class="logo-youtube" src="../img/youtube.svg" /></a>
+        <a href="https://www.tiktok.com/@litec.htl?_t=ZN-8tS1FR6wXfq&_r=1"><img class="logo-tiktok" src="../img/tiktok.png" /></a>
+    </div>
+
+    <div class="footer-links-container">
+        <div class="text-strong">Impressum</div>
+        <div class="text-strong">AGB</div>
+    </div>
+
+    <div class="unplugged-container">
+        <div class="unplugged-logo-text-container">
+            <img class="unplugged-logo" src="../img/unplugged_black.png" />
+            <div class="unplugged-text">unplugged</div>
+        </div>
+        <div class="unplugged-copyright">
+            Copyright
+            <img src="../img/copyright.png" />
+            2025 unplugged
+        </div>
+    </div>
+  </footer>
 
 </body>
 </html>

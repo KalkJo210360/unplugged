@@ -2,42 +2,13 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
   <link rel="stylesheet" href="../CSS/header.css">
-  <link rel="stylesheet" href="../CSS/login.css">
   <link rel="stylesheet" href="../CSS/footer.css">
   <link rel="stylesheet" href="../CSS/index.css">
+  <script src="../JS/header.js"></script>
   
-  
-  <style>
-  a,
-  button,
-  input,
-  select,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      border: none;
-      text-decoration: none;
-      background: none;
-  
-      -webkit-font-smoothing: antialiased;
-  }
-  
-  menu, ol, ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-  }
-  </style>
   <title>unplugged</title>
 </head>
 
@@ -56,14 +27,69 @@
     </div>
 
     <div class="button-container">
-        <button type="button" class="button login-button">
+        <button type="button" class="button login-button" onclick="openLogin()">
             <div class="button-text login">Einloggen</div>
         </button>
-        <button type="button" class="button register-button">
+        <button type="button" class="button register-button" onclick="openRegister()">
             <div class="button-text register">Registrieren</div>
         </button>
     </div>
-  </div>
+
+    <div id="login-window">
+        <div class="form">
+            <div class="input-field">
+              <div class="label">E-Mail</div>
+              <input type="email" placeholder="max.muster@gmail.com" class="input" />
+            </div>
+            <div class="input-field">
+              <div class="label">Passwort</div>
+              <input type="password" placeholder="Wert" class="input" />
+            </div>
+            <div class="frm-button-group">
+              <div class="frm-button">
+                <div class="frm-button-text">Einloggen</div>
+              </div>
+            </div>
+            <div class="text-link">
+              <button type="frm-button" class="text-link2" onclick="forgotPW()">Passwort vergessen?</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgot-password">
+        <div class="form forgot-password-frm">
+            <div class="input-field">
+                <div class="label">E-Mail</div>
+                <input type="email" placeholder="max.muster@gmail.com" class="input" />
+            </div>
+            <div class="frm-button-group-forgot-pw">
+                <button type="button" class="frm-button" onclick="returnForgotPW()">
+                    <div class="frm-button-text">Zurück</div>
+                </button>
+                <div class="frm-button">
+                    <div class="frm-button-text">Passwort zurücksetzen</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="register-window">
+        <div class="form register-frm">
+            <div class="input-field">
+                <div class="label">E-Mail</div>
+                <input type="email" placeholder="max.muster@gmail.com" class="input">
+            </div>
+            <div class="input-field">
+                <div class="label">Passwort</div>
+                <input type="password" placeholder="Wert" class="input">
+            </div>
+            <div class="frm-button-group">
+                <div class="frm-button">
+                    <div class="frm-button-text">Registrieren</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <a href="./index.html" class="logo-text-container">
         <div class="logo-container">
@@ -71,7 +97,7 @@
         </div>
         <div class="unplugged">unplugged</div>
     </a>
-  </header>
+</header>
 
   <main>
     <div class="search-and-image-container">
@@ -147,7 +173,7 @@
             2025 unplugged
         </div>
     </div>
-  </footer>
+</footer>
 
 </body>
 </html>

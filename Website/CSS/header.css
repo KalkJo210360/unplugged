@@ -1,6 +1,30 @@
 header {
   z-index: 1;
 }
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+
+    -webkit-font-smoothing: antialiased;
+}
+menu, ol, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 .navigation-pill-list {
   display: flex;
   flex-direction: row;
