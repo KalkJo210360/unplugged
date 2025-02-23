@@ -18,3 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function setIndex(index) {
+    localStorage.setItem("index", index);
+}

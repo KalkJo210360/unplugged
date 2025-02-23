@@ -19,8 +19,7 @@ main {
   position: relative;
   overflow: hidden;
 }
-.hero-basic {
-  background-image: url(../img/loc_short/loc2/outside1.png);
+#hero-basic {
   background-repeat: no-repeat;
   background-color: black;
   background-size: 100% 100%;
@@ -93,8 +92,7 @@ main {
   height: 478px;
   position: relative;
 }
-.image1 {
-  background-image: url(../img/loc_short/loc2/outside2.png);
+#image1 {
   background-repeat: no-repeat;
   background-color: black;
   background-size: 100% 100%;
@@ -109,8 +107,7 @@ main {
   overflow: hidden;
   object-fit: cover;
 }
-.image2 {
-  background-image: url(../img/loc_short/loc2/inside.png);
+#image2 {
   background-repeat: no-repeat;
   background-color: black;
   background-size: 100% 100%;
@@ -134,11 +131,12 @@ main {
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 1150px;
-  height: 303px;
+  width: 100%;
+  min-height: fit-content;
   min-width: 160px;
   position: relative;
-  left: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .text {
   display: flex;
@@ -147,7 +145,8 @@ main {
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  height: 100%;
+  width: 100%;
+  height: fit-content;
   position: relative;
 }
 .title2 {
